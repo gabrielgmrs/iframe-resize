@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Iframe Resize</title>
+		<script>
+			function iframeResize(ifr) {
+				ifr.style.height = "0px";
+				ifr.style.height = ifr.contentWindow.document.body.scrollHeight + 'px';
+			}
+		</script>
+	</head>
+	<body>
+		<iframe src="pages/pagina1.html" onload="iframeResize(this)">
+	</body>
+</html>
